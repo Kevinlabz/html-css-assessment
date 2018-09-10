@@ -1,23 +1,98 @@
+@import url('font-icons.css');
+@import url('reset.css');
 
 /*Body Background*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
+  height: 100%;
+  width: 100%;
   background-image: url('./../img/main-bg.jpeg');
-
-  /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
-
-  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
   background-attachment: fixed;
-
-  /* This is what makes the background image rescale based
-     on the container's size */
   background-size: cover;
-
-  /* Set a background color that will be displayed
-     while the background image is loading */
   background-color: skyblue;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  height: 5%;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.main-window-wrapper {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.header-mobile-menu {
+  display: none;
+}
+
+.down-arrow-wrapper {
+  display: flex;
+  color: grey;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/* Media screen  */
+@media screen and (max-width: 699px) {
+  .header-menu {
+    display: none;
+  }
+
+  .circle-wrapper {
+    border: 4px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  .header-mobile-menu {
+    display: contents;
+    color: white;
+  }
+
+  .twitter-icon {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+  }
+
+  .facebook-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .splash-screen-message{
+    font-size: 25px;
+  }
 }

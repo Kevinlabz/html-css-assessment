@@ -1,0 +1,18 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+.whitefont {
+  font-family: Baloo Bhaina;
+  color: white;
+}
+
+.hamberger-icon {
+  position: relative;
+  top: 9px;
+  left: 11px;
+}
+
+.down-arrow-icon {
+  position: relative;
+  top: 16px;
+  left: 23.5px;
+}
